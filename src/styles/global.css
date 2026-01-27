@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Smooth anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for sticky header */
+section {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 110px;
+  }
+}
+
+/* Scroll fade-in (mobile + desktop safe) */
+.fade-section {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,390 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- HERO SECTION -->
+  <section id="home" class="pt-5 pb-24 bg-green-50 fade-section">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+      
+      
+     <!-- Text -->
+<div class="flex flex-col">
+
+  <!-- Tagline (small but clear, near top) -->
+  <p class="text-sm uppercase tracking-widest text-gray-600 mb-6">
+    One oil. Complete care – from head to toe
+  </p>
+
+  <!-- Main Heading (bigger like Datezee) -->
+  <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+    Luthra <span class="text-green-700">Coconut Oil</span>
+  </h1>
+
+  <!-- Description (slightly larger & wider) -->
+  <p class="text-xl text-gray-700 max-w-2xl mb-7 leading-relaxed">
+    Luthra Pure Coconut Oil – Hair, Body & Massage Oil.  
+    100% Natural | Cold-Pressed | Multi-Purpose Massage Oil.
+  </p>
+
+  <!-- FSSAI row -->
+  <div class="flex items-center gap-3 mb-6">
+    <img
+      src="/fssai.png"
+      alt="FSSAI Certified"
+      class="h-6"
+    />
+    <p class="text-sm text-gray-500">
+      Lic. No: 11317005000254
+    </p>
+  </div>
+
+  <!-- PRICE BLOCK -->
+<div class="flex items-center gap-4 mb-8 flex-wrap">
+
+  <!-- Current Price -->
+  <span class="text-3xl font-bold text-green-700">
+    ₹299
+  </span>
+
+  <!-- MRP (striked) -->
+  <span class="text-lg text-gray-400 line-through">
+    ₹349
+  </span>
+
+  <!-- Discount Badge -->
+  <span class="text-sm font-semibold text-green-700 bg-green-100 px-3 py-1 rounded-full">
+    14% OFF
+  </span>
+
+</div>
+
+  <!-- Buttons -->
+  <div class="flex gap-5">
+    <a
+      href="#buy"
+      class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-md transition"
+    >
+      Buy Now
+    </a>
+
+    <a
+      href="#benefits"
+      class="border border-green-600 text-green-700 px-10 py-4 rounded-full font-semibold hover:bg-green-100 transition animate-fadeIn"
+    >
+      View Benefits
+    </a>
+  </div>
+
+</div>
+  
+
+      <!-- Image -->
+<div class="flex justify-end pr-16 md:pr-24">
+  <img
+    src="/oil.png"
+    alt="Luthra Coconut Oil"
+    class="w-[340px] md:w-[360px]  rounded-2xl shadow-xl hover:scale-105 transition"
+  />
+</div>
+
+
+    </div>
+  </section>
+  
+  <!-- WHY PREMIUM SECTION -->
+  <section id="details" class="bg-white pt-20 pb-24 w-full relative fade-section">
+   <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-24">
+      <p class="text-sm uppercase tracking-widest text-gray-500 mb-4">
+        Why Choose Us
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        Why Luthra Coconut Oil is
+        <span class="text-green-700">Premium?</span>
+      </h2>
+
+      <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Crafted with care using traditional methods to deliver purity,
+        quality, and wellness in every drop.
+      </p>
+    </div>
+
+    <!-- Premium Features -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+  <!-- Card 1: Purity -->
+  <div class="bg-green-50 rounded-2xl p-10 min-h-[340px] shadow-sm hover:shadow-md transition">
+    <div class="text-4xl mb-4">🌴</div>
+
+    <h3 class="text-lg font-semibold mb-2">
+      100% Pure Coconut Oil
+    </h3>
+
+    <div class="w-12 h-1 bg-green-600 rounded mb-6"></div>
+
+    <ul class="space-y-3 text-gray-700">
+      <li>✔ No Mineral Oil</li>
+      <li>✔ No Artificial Fragrance</li>
+      <li>✔ No Harsh Chemicals</li>
+      <li>✔ Suitable for All Skin & Hair Types</li>
+      <li>✔ Lightweight & Non-Greasy Formula</li>
+    </ul>
+  </div>
+
+  <!-- Card 2: Process -->
+  <div class="bg-green-50 rounded-2xl p-10 min-h-[340px] shadow-sm hover:shadow-md transition">
+    <div class="text-4xl mb-4">❄️</div>
+
+    <h3 class="text-lg font-semibold mb-2">
+      Cold-Pressed Process
+    </h3>
+
+    <div class="w-12 h-1 bg-green-600 rounded mb-6"></div>
+
+    <ul class="space-y-3 text-gray-700">
+      <li>✔ Traditional cold-press extraction</li>
+      <li>✔ No heat or chemical processing</li>
+      <li>✔ Retains natural nutrients</li>
+      <li>✔ Preserves aroma & purity</li>
+      <li>✔ Rich, authentic coconut essence</li>
+    </ul>
+  </div>
+
+  <!-- Card 3: Trust -->
+  <div class="bg-green-50 rounded-2xl p-10 min-h-[340px] shadow-sm hover:shadow-md transition">
+    <div class="text-4xl mb-4">🛡️</div>
+
+    <h3 class="text-lg font-semibold mb-2">
+      Quality & Safety Assured
+    </h3>
+
+    <div class="w-12 h-1 bg-green-600 rounded mb-6"></div>
+
+    <ul class="space-y-3 text-gray-700">
+      <li>✔ FSSAI Certified</li>
+      <li>✔ Strict hygiene standards</li>
+      <li>✔ Quality-checked batches</li>
+      <li>✔ Safe for daily use</li>
+      <li>✔ Trusted by families</li>
+    </ul>
+  </div>
+
+</div>
+  </div>
+</section>
+<!-- HOW TO USE SECTION -->
+<section id="benefits" class="bg-green-50 py-24 w-full fade-section">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+      <p class="text-sm uppercase tracking-widest text-gray-500 mb-3">
+        Simple & Clear
+      </p>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">
+        🧪 How to Use
+      </h2>
+    </div>
+
+    <!-- Usage Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Head Massage -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+        <img
+          src="/head.jpeg"
+          alt="Head Massage"
+          class="w-full h-48 md:h-56 object-cover rounded-xl mb-6">
+
+        <!-- Title -->
+<h3 class="text-xl font-bold mb-2">
+Head Massage 
+</h3>
+<p class="text-xs uppercase tracking-wide text-gray-400 mb-4">
+Hair & Scalp Care
+</p>
+
+
+<!-- Benefits -->
+<ul class="space-y-2 text-gray-700 mb-6">
+<li>✔ Strengthens hair roots</li>
+<li>✔ Reduces dryness & dandruff</li>
+<li>✔ Promotes healthy hair growth</li>
+<li>✔ Relieves stress & improves sleep</li>
+<li class="text-sm text-gray-500">
+Best used with a head massager for deep scalp relaxation
+</li>
+</ul>
+<!-- Divider -->
+<div class="h-px bg-gray-200 mb-4"></div>
+
+<ul class="space-y-2 text-gray-700">
+<li class="flex gap-2">
+<span class="font-semibold text-green-600">1.</span>
+Apply required amount on scalp before shower
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">2.</span>
+Massage gently using fingertips
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">3.</span>
+Leave for 10 minutes
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">4.</span>
+Wash with mild shampoo
+</li>
+</ul>
+      </div>
+
+      <!-- Body Massage -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+        <img
+          src="/body.jpeg"
+          alt="Body Massage"
+          class="w-full h-48 md:h-56 object-cover rounded-xl mb-6">
+
+       <h3 class="text-xl font-bold mb-2">
+   Body Massage 
+</h3>
+<p class="text-xs uppercase tracking-wide text-gray-400 mb-4">
+Full Body Relaxation
+</p>
+
+<ul class="space-y-2 text-gray-700 mb-6">
+  <li>✔ Deeply hydrates dry skin</li>
+  <li>✔ Relieves muscle tension & fatigue</li>
+  <li>✔ Improves blood circulation</li>
+  <li>✔ Leaves skin soft & glowing</li>
+  <li class="text-sm text-gray-500">
+    Perfect for daily body massage after bath
+  </li>
+</ul>
+
+<!-- Divider -->
+<div class="h-px bg-gray-200 mb-4"></div>
+
+        <ul class="space-y-2 text-gray-700">
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">1.</span>
+Warm a few drops
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">2.</span>
+Massage in circular motion
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">3.</span>
+Relax
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">4.</span>
+Wipe or shower
+</li>
+        </ul>
+        
+      </div>
+
+      <!-- Foot Massage -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+        <img
+          src="/foot.jpeg"
+          alt="Foot Massage"
+          class="w-full h-48 md:h-56 object-cover rounded-xl mb-6">
+        
+
+        <h3 class="text-xl font-bold mb-2">
+   Foot Massage 
+</h3>
+<p class="text-xs uppercase tracking-wide text-gray-400 mb-4">
+Ultimate Relaxation
+</p>
+
+<ul class="space-y-2 text-gray-700 mb-6">
+  <li>✔ Relaxes tired feet</li>
+  <li>✔ Reduces heel cracks & dryness</li>
+  <li>✔ Improves blood circulation</li>
+  <li>✔ Helps calm nerves for better sleep</li>
+</ul>
+
+<!-- Divider -->
+<div class="h-px bg-gray-200 mb-4"></div>
+
+        <ul class="space-y-2 text-gray-700">
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">1.</span>
+Apply generously
+</li>
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">2.</span>
+Massage soles & heels
+</li>
+
+<li class="flex items-start gap-2">
+<span class="font-semibold text-green-600">3.</span>
+Wash later
+</li>
+        </ul>
+        
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- READY TO BUY SECTION -->
+<section id="buy" class="bg-green-50 py-24 w-full fade-section">
+  <div class="max-w-7xl mx-auto px-6 flex justify-center">
+
+    <div class="w-full max-w-xl bg-white rounded-2xl shadow-lg overflow-hidden">
+
+      <!-- Header -->
+      <div class="bg-green-600 text-center py-8 px-6">
+        <h3 class="text-3xl font-extrabold text-white mb-2">
+          Ready to Experience Pure Care?
+        </h3>
+        <p class="text-sm text-green-100">
+          Order securely via WhatsApp
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="p-8 text-center">
+
+        <p class="text-gray-700 mb-8 text-lg leading-relaxed">
+          Click below to place your order on WhatsApp.
+          Payment via UPI after confirmation.
+        </p>
+
+        <!-- WhatsApp Pay Button -->
+        <a
+          href="https://wa.me/919446710162?text=Hi%20I%20want%20to%20order%20Luthra%20Coconut%20Oil%20(₹299).%0A%0AName:%0AAddress:%0APincode:"
+          target="_blank"
+          class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-md transition"
+        >
+          Order via WhatsApp – ₹299
+        </a>
+
+        <!-- Trust Indicators -->
+        <div class="flex flex-col items-center gap-3 mt-6 text-sm text-gray-500">
+          <div class="flex items-center gap-2">
+            🔒 <span class="font-medium">No card details required</span>
+          </div>
+          <div class="flex items-center gap-2">
+            💬 <span class="font-medium">Pay securely via WhatsApp</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</Layout> 
