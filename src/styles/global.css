@@ -92,19 +92,7 @@ section {
   }
 }
 
-/* -----------------------------------
-   MOBILE FIX: Product image alignment
------------------------------------ */
 
-@media (max-width: 768px) {
-  .hero-image img,
-  .product-image img {
-    display: block;
-    margin: 0 auto;
-    max-width: 92%;
-    height: auto;
-  }
-}
 
 /* =====================================
    MOBILE ONLY – HERO / PRODUCT IMAGE FIX
