@@ -34,9 +34,49 @@ section {
   transform: translateY(0);
 }
 
-/* -----------------------------------
-   MOBILE FIX: CTA buttons ONLY
------------------------------------ */
+/* ================================
+   CTA BUTTONS – DESKTOP + MOBILE
+================================ */
+
+/* Common button styles */
+.cta-btn {
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+/* Buy Now button */
+.buy-btn {
+  background-color: #16a34a;
+  color: white;
+}
+
+/* View Benefits button */
+.benefit-btn {
+  border: 2px solid #16a34a;
+  color: #16a34a;
+  background: transparent;
+}
+
+/* ================================
+   DESKTOP (default)
+================================ */
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ================================
+   MOBILE FIX
+================================ */
 
 @media (max-width: 768px) {
   .cta-buttons {
@@ -45,9 +85,10 @@ section {
     width: 100%;
   }
 
-  .cta-buttons > * {
-    flex: 1;
-    min-height: 52px;
+  .cta-btn {
+    flex: 1;            /* equal width */
+    height: 52px;       /* equal height */
+    font-size: 16px;
   }
 }
 
