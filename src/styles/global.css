@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* -----------------------------------
+   Global behavior
+----------------------------------- */
+
 /* Smooth anchor scrolling */
 html {
   scroll-behavior: smooth;
@@ -16,7 +20,10 @@ section {
   }
 }
 
-/* Scroll fade-in (mobile + desktop safe) */
+/* -----------------------------------
+   Scroll fade-in animation
+----------------------------------- */
+
 .fade-section {
   opacity: 0;
   transform: translateY(16px);
@@ -26,4 +33,40 @@ section {
 .fade-section.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* -----------------------------------
+   MOBILE FIX: Equal CTA buttons
+----------------------------------- */
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  .cta-buttons button,
+  .cta-buttons a {
+    flex: 1;                 /* equal width */
+    height: 52px;            /* equal height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 999px;    /* pill shape */
+  }
+}
+
+/* -----------------------------------
+   MOBILE FIX: Product image alignment
+----------------------------------- */
+
+@media (max-width: 768px) {
+  .product-image,
+  .hero-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+  }
 }
