@@ -105,3 +105,29 @@ section {
     height: auto;
   }
 }
+
+/* =====================================
+   MOBILE ONLY – HERO / PRODUCT IMAGE FIX
+   (NO DESKTOP IMPACT)
+===================================== */
+
+@media (max-width: 768px) {
+
+  /* Wrapper alignment */
+  .hero-image,
+  .product-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  /* Actual image */
+  .hero-image img,
+  .product-image img {
+    width: 88%;
+    max-width: 380px;        /* keeps it elegant */
+    height: auto;
+    border-radius: 20px;     /* smooth premium look */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+}
