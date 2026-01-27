@@ -62,17 +62,13 @@ section {
    MOBILE FIX: Product image alignment
 ----------------------------------- */
 
-
-
-/* MOBILE FIX: Product image centering */
 @media (max-width: 768px) {
-  .mobile-image-wrap {
-    display: flex;
-    justify-content: center;
-  }
-
-  .mobile-image-wrap img {
+  .product-image,
+  .hero-image {
+    display: block;
+    margin: 0 auto;
     max-width: 90%;
     height: auto;
   }
 }
+
