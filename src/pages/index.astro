@@ -3,67 +3,197 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <!-- HERO SECTION -->
+
   <section id="home" class="pt-5 pb-24 bg-green-50 fade-section">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-      <!-- Text -->
+
       <div class="flex flex-col">
 
-        <!-- Tagline-->
+
         <p class="text-sm uppercase tracking-widest text-gray-600 mb-6">
           One oil. Complete care – from head to toe
         </p>
 
-        <!-- Main Heading-->
         <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
           Luthra <span class="text-green-700">Coconut Oil</span>
         </h1>
 
-        <!-- Description-->
+    
         <p class="text-xl text-gray-700 max-w-2xl mb-7 leading-relaxed">
           Luthra Pure Coconut Oil – Hair, Body & Massage Oil.  
           100% Natural | Cold-Pressed | Multi-Purpose Massage Oil.
         </p>
 
-        <!-- FSSAI row -->
+        <div class="block md:hidden flex justify-center mt-8 mb-8">
+          <img
+            src="/oil.png"
+            alt="Luthra Coconut Oil"
+            class="w-[90%] max-w-[360px] rounded-2xl shadow-xl"
+          />
+        </div>
+
         <div class="flex items-center gap-3 mb-6">
           <img src="/fssai.png" alt="FSSAI Certified" class="h-6"/>
           <p class="text-sm text-gray-500">Lic. No: 11317005000254</p>
         </div>
 
-        <!-- PRICE BLOCK -->
         <div class="flex items-center gap-4 mb-8 flex-wrap">
 
-          <!-- Current Price -->
           <span class="text-3xl font-bold text-green-700">₹299</span>
 
-          <!-- MRP (striked) -->
           <span class="text-lg text-gray-400 line-through">₹349</span>
 
-          <!-- Discount Badge -->
+
           <span class="text-sm font-semibold text-green-700 bg-green-100 px-3 py-1 rounded-full">14% OFF</span>
         </div>
 
-        <!-- Buttons -->
+
         <div class="cta-buttons">
-          <a href="#buy" class="cta-btn buy-btn">Buy Now</a>
+          <a href="#buy" class="cta-btn buy-btn"> Buy Now</a>
           <a href="#benefits" class="cta-btn benefit-btn">View Benefits</a>
         </div>
       </div>
+
+      <div class="hidden md:flex justify-end px-24">
+        <img
+          src="/oil.png"
+          alt="Luthra Coconut Oil"
+          class="w-[360px] rounded-2xl shadow-xl hover:scale-105 transition"
+        />
+      </div>
   
-        <!-- Image -->
-        <div class="flex justify-center md:justify-end px-4 md:px-24 mt-6 md:mt-0">
-          <img src="/oil.png" alt="Luthra Coconut Oil" class="w-[90%] max-w-[360px] md:w-[360px] rounded-2xl shadow-xl transition md:hover:scale-105"/>
-        </div>
+        
     </div>
   </section>
+
+  <section id="home" class="hidden md:block relative">
+
+  <img
+    src="/luthra_hair_dye.png"
+    alt="Luthra Hair Dye Oil"
+    class="w-full h-[700px] object-cover"
+  />
+
+  <div class="absolute inset-0 bg-black/10"></div>
+
+
+  <div class="absolute inset-0 flex items-center z-10">
+
+    <div class="w-full pl-10">
+
+
+      <div class="bg-white/75 backdrop-blur-sm p-8 rounded-3xl max-w-2xl shadow-xl">
+        
+        <span
+  class="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-emerald-500 text-white px-5 py-3 rounded-full font-semibold shadow-lg shadow-green-500/20 uppercase tracking-wide text-sm"
+>
+  🌿 NEW ARRIVAL
+</span>
+
+        <h1 class="text-6xl font-bold mt-4 leading-tight">
+          Luthra
+          <span class="text-green-600">Hair Dye Oil</span>
+        </h1>
+
+        <p class="text-2xl mt-4 text-gray-800">
+          Natural Ayurvedic Hair Darkening Oil
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-8">
+  <span class="bg-green-50 px-3 py-2 rounded-full">✓ Natural Hair Dye</span>
+  <span class="bg-green-50 px-3 py-2 rounded-full">✓ Reduces Dandruff</span>
+  <span class="bg-green-50 px-3 py-2 rounded-full">✓ Prevents Hair Fall</span>
+  <span class="bg-green-50 px-3 py-2 rounded-full">✓ Strengthens Roots</span>
+</div>
+
+        <div class="flex items-center gap-4 mt-8 bg-green-50 px-5 py-3 rounded-2xl w-fit">
+          <span class="text-5xl font-bold text-green-600">
+            ₹499
+          </span>
+
+          <span class="text-3xl line-through text-gray-500">
+            ₹699
+          </span>
+
+          <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-semibold">
+            SAVE 29%
+          </span>
+        </div>
+        <a href="#buy">
+        <button 
+          class="mt-8 bg-green-600 text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-green-500/40 hover:scale-105 transition-all duration-300"
+        >
+          Buy Now
+        </button>
+      </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <div class="block md:hidden px-6 py-8">
+ 
+        <div class="flex justify-center mb-4">
+          <span
+            class="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-emerald-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg"
+          >
+            🌿 NEW ARRIVAL
+          </span>
+        </div>
+
+        <div class="flex justify-center mb-6">
+          <img
+            src="/luthra_hair_dye.png"
+            alt="Luthra Hair Dye Oil"
+            class="w-full max-w-xs rounded-3xl shadow-xl"
+          />
+        </div>
+
+          <h1 class="text-5xl font-extrabold mt-4 leading-tight">
+            Luthra
+            <span class="text-green-600">Hair Dye Oil</span>
+          </h1>
+
+        <p class="mt-4 text-gray-700">
+          Natural Ayurvedic Hair Darkening Oil
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-6">
+          <span class="px-4 py-2 rounded-full bg-green-50 border border-green-100">✓ Natural Hair Dye</span>
+          <span class="px-4 py-2 rounded-full bg-green-50 border border-green-100">✓ Reduces Dandruff</span>
+          <span class="px-4 py-2 rounded-full bg-green-50 border border-green-100">✓ Prevents Hair Fall</span>
+          <span class="px-4 py-2 rounded-full bg-green-50 border border-green-100">✓ Strengthens Roots</span>
+        </div>
+
+        <div class="mt-8 bg-green-50 rounded-2xl p-4 inline-flex items-center gap-3">
+        <span class="text-5xl font-bold text-green-600">₹499</span>
+
+        <span class="text-2xl line-through text-gray-400">
+          ₹699
+        </span>
+
+        <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+          SAVE 29%
+        </span>
+      </div>
+      <a href="#buy">
+      <button
+        class="mt-8 w-full bg-gradient-to-r from-green-600 to-emerald-500 text-white py-4 rounded-2xl 
+        text-xl font-semibold shadow-lg hover:scale-105 transition">
+        Buy Now →
+      </button>
+      </a>
   
-  <!-- WHY PREMIUM SECTION -->
+</div>
+  
   <section id="details" class="bg-white pt-20 pb-24 w-full relative fade-section">
     <div class="max-w-7xl mx-auto px-6">
 
-      <!-- Section Heading -->
       <div class="text-center mb-24">
         <p class="text-sm uppercase tracking-widest text-gray-500 mb-4">Why Choose Us</p>
 
@@ -75,10 +205,8 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
 
-      <!-- Premium Features -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-        <!-- Card 1: Purity -->
         <div class="bg-green-50 rounded-2xl p-10 min-h-[340px] shadow-sm hover:shadow-md transition">
           <div class="text-4xl mb-4">🌴</div>
 
@@ -97,7 +225,6 @@ import Layout from '../layouts/Layout.astro';
             </ul>
           </div>
 
-          <!-- Card 2: Process -->
           <div class="bg-green-50 rounded-2xl p-10 min-h-[340px] shadow-sm hover:shadow-md transition">
             <div class="text-4xl mb-4">❄️</div>
 
@@ -116,7 +243,6 @@ import Layout from '../layouts/Layout.astro';
             </ul>
           </div>
 
-          <!-- Card 3: Trust -->
           <div class="bg-green-50 rounded-2xl p-10 min-h-[340px] shadow-sm hover:shadow-md transition">
             <div class="text-4xl mb-4">🛡️</div>
 
@@ -139,11 +265,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
-  <!-- HOW TO USE SECTION -->
+
   <section id="benefits" class="bg-green-50 py-24 w-full fade-section">
     <div class="max-w-7xl mx-auto px-6">
 
-      <!-- Section Heading -->
       <div class="text-center mb-16">
         <p class="text-sm uppercase tracking-widest text-gray-500 mb-3">
           Simple & Clear
@@ -153,14 +278,12 @@ import Layout from '../layouts/Layout.astro';
         </h2>
       </div>
 
-      <!-- Usage Cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 
-        <!-- Head Massage -->
         <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
-          <img src="/head.jpeg" alt="Head Massage" class="w-full h-48 md:h-56 object-cover rounded-xl mb-6">
+          <img src="/head.jpeg" alt="Head Massage" class="w-full h-48 md:h-56 object-cover rounded-xl mb-6
+                  transition duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
 
-          <!-- Title -->
           <h3 class="text-xl font-bold mb-2">
             Head Massage 
           </h3>
@@ -168,7 +291,6 @@ import Layout from '../layouts/Layout.astro';
             Hair & Scalp Care
           </p>
 
-          <!-- Benefits -->
           <ul class="space-y-2 text-gray-700 mb-6">
             <li>✔ Strengthens hair roots</li>
             <li>✔ Reduces dryness & dandruff</li>
@@ -178,7 +300,7 @@ import Layout from '../layouts/Layout.astro';
               Best used with a head massager for deep scalp relaxation
             </li>
           </ul>
-          <!-- Divider -->
+    
           <div class="h-px bg-gray-200 mb-4"></div>
 
             <ul class="space-y-2 text-gray-700">
@@ -201,10 +323,9 @@ import Layout from '../layouts/Layout.astro';
             </ul> 
           </div>
         
-
-          <!-- Body Massage -->
           <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
-            <img src="/body.jpeg" alt="Body Massage" class="w-full h-48 md:h-56 object-cover rounded-xl mb-6">
+            <img src="/body.jpeg" alt="Body Massage" class="w-full h-48 md:h-56 object-cover rounded-xl mb-6
+            transition duration-500 ease-in-out hover:scale-105 hover:shadow-2xl">
 
             <h3 class="text-xl font-bold mb-2">
               Body Massage 
@@ -223,7 +344,6 @@ import Layout from '../layouts/Layout.astro';
               </li>
             </ul>
 
-            <!-- Divider -->
             <div class="h-px bg-gray-200 mb-4"></div>
 
               <ul class="space-y-2 text-gray-700">
@@ -246,9 +366,9 @@ import Layout from '../layouts/Layout.astro';
               </ul>
             </div>
 
-            <!-- Foot Massage -->
             <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
-              <img src="/foot.jpeg" alt="Foot Massage" class="w-full h-48 md:h-56 object-cover rounded-xl mb-6">
+              <img src="/foot.jpeg" alt="Foot Massage" class="w-full h-48 md:h-56 object-cover rounded-xl mb-6
+              transition duration-500 ease-in-out hover:scale-105 hover:shadow-2xl">
         
               <h3 class="text-xl font-bold mb-2">
                 Foot Massage 
@@ -264,7 +384,6 @@ import Layout from '../layouts/Layout.astro';
                 <li>✔ Helps calm nerves for better sleep</li>
               </ul>
 
-              <!-- Divider -->
               <div class="h-px bg-gray-200 mb-4"></div>
 
                 <ul class="space-y-2 text-gray-700">
@@ -292,12 +411,12 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
-  <!-- READY TO BUY SECTION -->
+
   <section id="buy" class="bg-green-50 py-24 w-full fade-section">
     <div class="max-w-7xl mx-auto px-6 flex justify-center">
       <div class="w-full max-w-xl bg-white rounded-2xl shadow-lg overflow-hidden">
 
-        <!-- Header -->
+
         <div class="bg-green-600 text-center py-8 px-6">
           <h3 class="text-3xl font-extrabold text-white mb-2">
             Ready to Experience Pure Care?
@@ -307,7 +426,6 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
 
-        <!-- Content -->
         <div class="p-8 text-center">
 
           <p class="text-gray-700 mb-8 text-lg leading-relaxed">
@@ -315,15 +433,15 @@ import Layout from '../layouts/Layout.astro';
             Payment via UPI after confirmation.
           </p>
 
-          <!-- WhatsApp Pay Button -->
+
           <a
             href="https://wa.me/919446710162?text=Hi%20I%20want%20to%20order%20Luthra%20Coconut%20Oil%20(₹299).%0A%0AName:%0AAddress:%0APincode:"
             target="_blank"
             class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-md transition">
-            Order via WhatsApp – ₹299
+            Order via WhatsApp
           </a>
 
-          <!-- Trust Indicators -->
+
           <div class="flex flex-col items-center gap-3 mt-6 text-sm text-gray-500">
             <div class="flex items-center gap-2">
               🚚 <span class="font-medium">Free Delivery</span>

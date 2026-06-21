@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* -----------------------------------
-   Global behavior
------------------------------------ */
 
 html {
   scroll-behavior: smooth;
@@ -19,9 +16,7 @@ section {
   }
 }
 
-/* -----------------------------------
-   Scroll fade-in animation
------------------------------------ */
+
 
 .fade-section {
   opacity: 0;
@@ -34,39 +29,72 @@ section {
   transform: translateY(0);
 }
 
-/* ================================
-   CTA BUTTONS – DESKTOP + MOBILE
-================================ */
+/* desktop */
 
 /* Common button styles */
 .cta-btn {
-  padding: 14px 28px;
+  padding: 14px 30px;
   font-size: 16px;
   border-radius: 999px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
+  transition: all 0.35s ease;
+  cursor: pointer;
 }
 
-/* Buy Now button */
+/* Buy Now */
 .buy-btn {
-  background-color: #16a34a;
-  color: white;
+  background: rgba(255,255,255,0.7);
+  color: #16a34a;
+  border: 2px solid #16a34a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
 }
 
-/* View Benefits button */
+.buy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(22, 163, 74, 0.35);
+  color: white;
+  background: #16a34a;
+}
+
+.buy-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: rgba(255,255,255,0.25);
+  transform: skewX(-25deg);
+  transition: 0.7s;
+}
+
+.buy-btn:hover::before {
+  left: 130%;
+}
+
+/* View Benefits */
 .benefit-btn {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
   border: 2px solid #16a34a;
   color: #16a34a;
-  background: transparent;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* ================================
-   DESKTOP (default)
-================================ */
+.benefit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(22, 163, 74, 0.35);
+  color: white;
+  background: #16a34a;
+}
+
+
 
 .cta-buttons {
   display: flex;
@@ -74,34 +102,44 @@ section {
   align-items: center;
 }
 
-/* ================================
-   MOBILE FIX
-================================ */
 
 @media (max-width: 768px) {
+
   .cta-buttons {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 14px;
     width: 100%;
+    margin-top: 20px;
   }
 
   .cta-btn {
-    flex: 1;            /* equal width */
-    height: 52px;       /* equal height */
-    font-size: 16px;
+    width: 100%;
+    height: 56px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 16px;
+  }
+
+  .buy-btn {
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 8px 25px rgba(22,163,74,.25);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid #16a34a;
+  }
+
+  .benefit-btn {
+    background: rgba(255,255,255,.8);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid #16a34a;
+    box-shadow: 0 8px 25px rgba(22,163,74,.25);
   }
 }
 
 
-
-/* =====================================
-   MOBILE ONLY – HERO / PRODUCT IMAGE FIX
-   (NO DESKTOP IMPACT)
-===================================== */
-
 @media (max-width: 768px) {
 
-  /* Wrapper alignment */
+
   .hero-image,
   .product-image {
     display: flex;
@@ -109,13 +147,13 @@ section {
     margin-top: 24px;
   }
 
-  /* Actual image */
+
   .hero-image img,
   .product-image img {
     width: 88%;
-    max-width: 380px;        /* keeps it elegant */
+    max-width: 380px;        
     height: auto;
-    border-radius: 20px;     /* smooth premium look */
+    border-radius: 20px;     
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   }
 }
